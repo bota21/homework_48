@@ -133,6 +133,7 @@ body
   padding: 74px 0 99px
   +size-m
     flex-wrap: wrap
+    padding-bottom: 40px
 .promo_wrapper
   width: 400px
   margin: 0 11px
@@ -141,9 +142,9 @@ body
     width: 200px
   &:hover
     box-shadow: 0 0 20px lighten($light_grey, 40%)
-    &+.promo_wrapper_item
+    & .promo_wrapper_item
       background: $yellow
-    &+.promo_wrapper_item_arrow
+    & .promo_wrapper_item_arrow span
       background: $white url(../img/ic-arrow.png) 50% no-repeat
   +size-m
     margin: 10px
@@ -173,3 +174,92 @@ body
 .promo_wrapper_item_text
   +size-m
     font-size: 12px
+.content_container
+  padding-bottom: 98px
+  display: grid
+  grid-template-columns: repeat(2, 1fr)
+  grid-template-rows: 1fr
+  grid-gap: 54px
+  +size-m
+    grid-template-columns: 1fr
+    grid-template-rows: repeat(2, 300px)
+    grid-gap: 35px
+    padding-bottom: 20px
+  +size-xs
+    grid-gap: 170px
+.content_wrapper
+  &:last-child
+    position: relative
+    +size-l
+      display: flex
+      justify-content: center
+.content_title
+  font-weight: 600
+  font-size: 36px
+  color: $dark_grey
+  margin-bottom: 74px
+  +size-l
+    font-size: 30px
+    margin-bottom: 40px
+  +size-m
+    margin-bottom: 20px
+.content_wrapper_item
+  margin: 27px 0
+  padding-left: 119px
+  +size-l
+    padding-left: 90px
+.content_icon_first
+  background: url(../img/ic-content1.png) 0 50% no-repeat
+  +size-l
+    background-size: 15%
+  +size-m
+    background-size: 7%
+  +size-xs
+    background-size: 18%
+.content_icon_second
+  background: url(../img/ic-content2.png) 0 50% no-repeat
+  +size-l
+    background-size: 15%
+  +size-m
+    background-size: 7%
+  +size-xs
+    background-size: 18%
+.content_icon_third
+  background: url(../img/ic-content3.png) 0 50% no-repeat
+  +size-l
+    background-size: 15%
+  +size-m
+    background-size: 7%
+  +size-xs
+    background-size: 18%
+.content_wrapper_item_title
+  font-size: 29px
+  margin-bottom: 23px
+  +size-l
+    font-size: 24px
+    margin-bottom: 10px
+.content_wrapper_item_text
+  font-size: 21px
+  line-height: 29px
+  +size-l
+    font-size: 18px
+    line-height: 20px
+.content_wrapper_block
+  width: 200px
+  height: 85%
+  background: $yellow
+  position: absolute
+  top: 10%
+  left: 10%
+  +size-l
+    display: none
+.content_wrapper_img
+  position: absolute
+  z-index: 100
+  right: 0
+  top: 0
+  +size-l
+    width: 60%
+    position: static
+  +size-xs
+    width: 100%
