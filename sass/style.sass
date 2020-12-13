@@ -124,3 +124,52 @@ body
   +size-m
     height: 40px
     width: 200px
+.promo_container
+  display: flex
+  justify-content: center
+  font-weight: 700
+  font-size: 14px
+  color: $black
+  padding: 74px 0 99px
+  +size-m
+    flex-wrap: wrap
+.promo_wrapper
+  width: 400px
+  margin: 0 11px
+  cursor: pointer
+  +size-m
+    width: 200px
+  &:hover
+    box-shadow: 0 0 20px lighten($light_grey, 40%)
+    &+.promo_wrapper_item
+      background: $yellow
+    &+.promo_wrapper_item_arrow
+      background: $white url(../img/ic-arrow.png) 50% no-repeat
+  +size-m
+    margin: 10px
+.promo_wrapper_img
+  width: 100%
+  height: 414px
+  +size-m
+    height: 200px
+.promo_wrapper_item
+  width: 100%
+  height: 133px
+  background: $white
+  box-shadow: 0 0 10px lighten($light_grey, 50%)
+  padding: 0 20px
+  display: flex
+  align-items: center
+  +size-m
+    height: 80px
+.promo_wrapper_item_arrow
+  span
+    display: inline-block
+    width: 38px
+    height: 38px
+    background: $yellow url(../img/ic-arrow.png) 50% no-repeat
+    border-radius: 50%
+    margin-right: 22px
+.promo_wrapper_item_text
+  +size-m
+    font-size: 12px
