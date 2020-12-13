@@ -1,0 +1,126 @@
+@import font&color
+@import media
+a
+  color: inherit
+body
+  background: $white
+  color: $grey
+  font-size: 16px
+  font-family: $nunito
+.container
+  width: 1241px
+  margin: 0 auto
+  +size-xl
+    width: 100%
+    padding: 0 20px
+.header
+  background: $bg_header, url(../upload/bg-header.jpg) no-repeat
+  background-size: cover
+  color: $white
+  padding: 42px 0 73px
+  overflow: hidden
+.header_nav
+  display: flex
+  align-items: center
+  font-family: $roboto
+  +size-m
+    justify-content: space-between
+.menu
+  margin-left: 360px
+  +size-xl
+    margin-left: 200px
+  +size-l
+    margin-left: 150px
+  +size-m
+    display: none
+    position: absolute
+    top: 20px
+    left: 55%
+    margin-left: 0
+  +size-s
+    left: 50%
+  +size-xs
+    left: 15%
+.menu_list
+  margin: 0 25px
+  &:hover
+    color: lighten($black, 70%)
+  +size-m
+    margin: 10px 0
+    padding: 5px
+    background: lighten($grey, 50%)
+    border-radius: 5px
+%burger_line
+  width: 35px
+  height: 4px
+  background: $white
+  border-radius: 10px
+  display: inline-block
+  cursor: pointer
+.burger_menu
+  display: none
+  +size-m
+    display: inline-block
+  span
+    @extend %burger_line
+    &::before
+      content: ""
+      @extend %burger_line
+      margin-top: 12px
+    &::after
+      content: ""
+      @extend %burger_line
+      margin-bottom: 3px
+.header_title
+  width: 63%
+  font-weight: 700
+  font-size: 60px
+  line-height: 82px
+  margin: 173px 0 50px
+  +size-m
+    font-size: 40px
+    line-height: 50px
+    margin: 80px 0 20px
+  +size-xs
+    line-height: 40px
+    width: 100%
+.header_text
+  width: 63%
+  font-size: 29px
+  line-height: 40px
+  margin-bottom: 155px
+  +size-m
+    font-size: 20px
+    line-height: 24px
+    margin-bottom: 50px
+  +size-xs
+    width: 100%
+    line-height: 22px
+.header_form
+  width: 100%
+  background: $white
+  padding: 20px 92px
+  display: flex
+  +size-m
+    padding: 20px 40px
+.header_form_input
+  width: 100%
+  height: 61px
+  background: $pink
+  border: none
+  margin-right: 23px
+  +size-m
+    height: 40px
+.header_form_submit
+  width: 241px
+  height: 61px
+  color: $black
+  background: $yellow
+  border: none
+  font-size: 23px
+  &:hover
+    background: $black
+    color: $yellow
+  +size-m
+    height: 40px
+    width: 200px
