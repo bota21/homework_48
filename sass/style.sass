@@ -193,6 +193,8 @@ body
     +size-l
       display: flex
       justify-content: center
+    +size-m
+      margin: 40px 0
 .content_title
   font-weight: 600
   font-size: 36px
@@ -205,33 +207,15 @@ body
     margin-bottom: 20px
 .content_wrapper_item
   margin: 27px 0
-  padding-left: 119px
-  +size-l
-    padding-left: 90px
-.content_icon_first
-  background: url(../img/ic-content1.png) 0 50% no-repeat
-  +size-l
-    background-size: 15%
-  +size-m
-    background-size: 7%
-  +size-xs
-    background-size: 18%
-.content_icon_second
-  background: url(../img/ic-content2.png) 0 50% no-repeat
-  +size-l
-    background-size: 15%
-  +size-m
-    background-size: 7%
-  +size-xs
-    background-size: 18%
-.content_icon_third
-  background: url(../img/ic-content3.png) 0 50% no-repeat
-  +size-l
-    background-size: 15%
-  +size-m
-    background-size: 7%
-  +size-xs
-    background-size: 18%
+  display: flex
+.content_icon
+  display: inline-block
+  width: 110px
+  height: 92px
+  &:active
+    transform: scale(1.2)
+.content_wrapper_item_wrapper
+  margin-left: 29px
 .content_wrapper_item_title
   font-size: 29px
   margin-bottom: 23px
@@ -260,6 +244,282 @@ body
   top: 0
   +size-l
     width: 60%
+    height: 100%
     position: static
   +size-xs
     width: 100%
+.help_container
+  background: $pink
+  width: 80%
+  padding: 127px 0 100px 160px
+  +size-xl
+    padding: 100px 50px
+  +size-m
+    padding: 40px
+  +size-s
+    width: 100%
+  +size-xs
+    padding: 20px
+.help_title
+  font-weight: 600
+  font-size: 36px
+  color: $dark_grey
+  +size-m
+    font-size: 30px
+  +size-xs
+    font-size: 24px
+.help_text
+  font-size: 29px
+  margin: 27px 0 32px
+  color: $light_grey
+  +size-m
+    font-size: 24px
+  +size-xs
+    font-size: 16px
+.help_wrapper
+  max-width: 703px
+  padding: 9px 12px 9px 22px
+  border: 1px solid $black
+  display: flex
+  align-items: center
+  justify-content: space-between
+  background: $white
+  +size-xs
+    padding: 5px
+.help_wrapper_flag
+  width: 39px
+  height: 30px
+  +size-m
+    width: 26px
+    height: 17px
+.help_wrapper_number
+  color: $black
+  font-size: 29px
+  margin-left: 13px
+  display: inline-block
+  +size-m
+    font-size: 18px
+  +size-xs
+    font-size: 12px
+    margin-left: 5px
+.help_wrapper_input
+  width: 85%
+  display: flex
+  justify-content: space-between
+  margin-left: 21px
+  +size-xs
+    margin-left: 0
+.help_wrapper_input_phone
+  width: 70%
+  border: none
+  font-size: 36px
+  &:focus
+    color: $blue_line
+  +size-m
+    font-size: 18px
+  +size-xs
+    font-size: 16px
+.help_wrapper_input_send
+  width: 152px
+  height: 61px
+  background: $yellow
+  font-size: 29px
+  color: $black
+  border: none
+  +size-m
+    height: 40px
+    font-size: 20px
+  +size-xs
+    width: 70px
+    font-size: 16px
+.ideas_container
+  border-bottom: 1px solid $grey_line
+  padding: 122px 20px 60px
+  +size-m
+    padding: 40px 20px
+.ideas_title
+  font-weight: 600
+  font-size: 36px
+  color: $dark_grey
+  margin-bottom: 70px
+  +size-m
+    margin-bottom: 20px
+  +size-xs
+    font-size: 30px
+.ideas_wrapper
+  display: flex
+  flex-wrap: wrap
+  justify-content: center
+.ideas_img
+  width: 280px
+  height: 391px
+  margin: 10px
+  +size-m
+    width: 190px
+    height: 301px
+  +size-xs
+    width: 110px
+    height: 171px
+.navigation_container
+  padding: 49px 0 112px
+  display: flex
+  +size-l
+    flex-direction: column
+    padding: 40px 20px
+.navigation_wrapper
+  &:first-child
+    padding-top: 131px
+    margin-right: 43px
+    +size-l
+      padding: 0 0 40px 0
+.navigation_wrapper_link
+  display: inline-block
+  border-right: 2px solid $black
+  color: $black
+  font-weight: 600
+  font-size: 20px
+  line-height: 27px
+  padding: 0 10px
+  &:last-child
+    border-right: none
+  &:hover
+    color: $blue
+  +size-m
+    font-size: 16px
+    padding: 0 20px
+    line-height: 40px
+  +size-xs
+    padding: 0 40px
+    border-right: none
+    line-height: 20px
+    margin: 10px 0
+.navigation_wrapper_title
+  font-weight: 600
+  font-size: 36px
+  color: $dark_grey
+  +size-l
+    font-size: 30px
+    line-height: 26px
+  +size-m
+    font-size: 24px
+.navigation_wrapper_uppertext
+  font-weight: 600
+  font-size: 24px
+  line-height: 33px
+  color: $nav_title
+  margin: 40px 0
+  +size-l
+    margin: 10px 0
+  +size-m
+    font-size: 20px
+.navigation_wrapper_text
+  font-weight: 600
+  font-size: 20px
+  line-height: 27px
+  color: $nav_text
+  margin-bottom: 33px
+  +size-l
+    margin-bottom: 10px
+  +size-m
+    font-size: 16px
+.footer_menu
+  background: $blue
+  color: $f_text
+.footer_menu_container
+  padding: 45px 0 30px
+  display: flex
+  justify-content: space-between
+  border-bottom: 1px solid $f_line
+  +size-xl
+    padding: 30px 0
+  +size-l
+    flex-wrap: wrap
+.footer_menu_link
+  line-height: 19px
+  margin: 0 20px
+  &:hover
+    color: $black
+  +size-l
+    margin-bottom: 20px
+.info
+  background: $blue
+  color: $f_text
+.info_container
+  border-bottom: 1px solid $f_line
+  padding: 28px 20px 0
+.info_title
+  font-weight: 600
+  font-size: 24px
+  color: $white
+  margin-bottom: 23px
+.info_wrapper
+  margin-bottom: 35px
+  +size-xs
+    margin-bottom: 15px
+.info_wrapper_country
+  margin-bottom: 15px
+  font-family: $roboto
+  font-size: 20px
+  color: $f_title
+  +size-xs
+    margin-bottom: 10px
+.info_wrapper_cities
+  display: flex
+  +size-l
+    flex-wrap: wrap
+.info_wrapper_cities_city
+  font-family: $roboto
+  margin-right: 35px
+  &:last-child
+    margin-right: 0
+  &:hover
+    color: $black
+  +size-xl
+    margin-bottom: 20px
+  +size-xs
+    margin-bottom: 10px
+    font-size: 14px
+footer
+  background: $blue
+  color: $f_text
+  padding: 26px 0 33px
+  +size-m
+    padding: 15px 0
+.footer_container
+  display: flex
+  align-items: center
+  justify-content: space-between
+  +size-m
+    flex-direction: column
+.footer_wrapper
+  display: flex
+  font-family: $roboto
+  font-size: 11px
+  line-height: 13px
+  margin-left: 75px
+  +size-xl
+    margin-left: 30px
+  +size-m
+    margin: 10px 0 20px
+  +size-xs
+    flex-direction: column
+.footer_wrapper_link
+  margin-right: 50px
+  &:last-child
+    margin-right: 0
+  +size-xs
+    margin-bottom: 10px
+.footer_shop
+  display: flex
+  +size-xl
+    margin-left: 20px
+.footer_shop_item
+  &:first-child
+    margin-right: 52px
+    +size-xl
+      margin-right: 20px
+  img
+    +size-xs
+      width: 120px
+    
+    
